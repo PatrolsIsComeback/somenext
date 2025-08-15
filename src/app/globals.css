@@ -1,15 +1,21 @@
-/* src/app/globals.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background-color: #111315;
+  --sidebar-navbar-bg: #181a1d;
+  --beta-blue: #1596f7;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-blue: #1596f7;
+}
+
 body {
-  background-color: #111315;
-  color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Scrollbar için stil */
@@ -18,7 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #181a1d;
+  background: var(--sidebar-navbar-bg);
 }
 
 ::-webkit-scrollbar-thumb {
